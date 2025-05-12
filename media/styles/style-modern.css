@@ -124,6 +124,16 @@ label {
   flex-wrap: wrap;
 }
 
+#solution_upload div.right,
+#task_list div.right {
+  padding-left: 0;
+}
+
+#solution_upload div.left,
+#task_list div.left {
+  padding-right: 0;
+}
+
 /* Left/right sections - default desktop layout */
 .left, .right {
   flex: 1;
@@ -143,7 +153,6 @@ table {
   width: 100%;
   overflow-x: auto;
   display: block;
-  font-size: 0.95rem;
   border-spacing: 0;
 }
 
@@ -152,6 +161,10 @@ td {
   padding: 0.75rem;
   text-align: left;
   border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background-color: #f1f5f9; /* Slightly darker gray */
 }
 
 /* === Notifications Modernized === */
@@ -168,17 +181,6 @@ td {
 
 .notification .ui-icon {
   flex-shrink: 0;
-}
-
-/* === Tooltip Modern Look === */
-.tooltip {
-  background: rgba(17, 24, 39, 0.9);
-  border-radius: var(--border-radius);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  padding: 1rem;
-  font-size: 0.875rem;
-  color: white;
-  max-width: 300px;
 }
 
 /* === Misc Cleanup === */
